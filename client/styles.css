@@ -122,6 +122,7 @@ button {
 
 .masthead__title {
   min-width: 0;
+  transform: translateX(-4%);
 }
 
 .masthead__kicker,
