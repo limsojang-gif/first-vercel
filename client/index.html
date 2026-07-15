@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="대화가 오늘의 1면이 되는 AI 챗봇" />
+    <title>Groq Assistant — The Conversation Paper</title>
+    <link rel="stylesheet" href="/client/styles.css" />
+  </head>
+  <body>
+    <main class="newspaper">
+      <header class="masthead" aria-labelledby="page-title">
+        <div class="masthead__utility">
+          <span>VOL. 01 · NO. 03</span>
+          <span>THE CONVERSATION PAPER</span>
+          <span class="live-status"><i aria-hidden="true"></i> AI ONLINE</span>
+        </div>
+
+        <div class="masthead__title-row">
+          <p class="masthead__side-copy">QUESTIONS<br />IDEAS<br />ANSWERS</p>
+          <div class="masthead__title">
+            <p class="masthead__kicker">DAILY INTELLIGENCE EDITION</p>
+            <h1 id="page-title">GROQ ASSISTANT</h1>
+            <p class="masthead__deck">Ask clearly. Think deeply. Read differently.</p>
+          </div>
+          <p class="masthead__side-copy masthead__side-copy--right">FAST<br />CURIOUS<br />ALWAYS ON</p>
+        </div>
+
+        <div class="masthead__folio">
+          <span>SEOUL · WEDNESDAY EDITION</span>
+          <strong>YOUR DAILY AI BRIEFING</strong>
+          <span>EST. 2026</span>
+        </div>
+      </header>
+
+      <section class="edition" aria-label="AI conversation">
+        <section class="conversation" aria-labelledby="conversation-title">
+          <header class="conversation__header">
+            <div>
+              <p class="section-label">THE LEAD STORY</p>
+              <h2 id="conversation-title">Today's Conversation</h2>
+            </div>
+            <p>AI와 나누는 실시간 대화</p>
+          </header>
+
+          <div id="messages" class="chat-messages" aria-live="polite" aria-busy="false">
+            <article class="message message--assistant">
+              <div class="message__avatar" aria-hidden="true">G</div>
+              <div class="message__body">
+                <div class="message__meta">
+                  <strong>GROQ DESK</strong>
+                  <span>ASSISTANT · OPENING NOTE</span>
+                </div>
+                <p>안녕하세요. 오늘 어떤 이야기를 함께 살펴볼까요?</p>
+              </div>
+            </article>
+          </div>
+
+          <form id="chat-form" class="chat-composer">
+            <label for="q">SEND A QUESTION TO THE DESK</label>
+            <div class="chat-composer__row">
+              <input
+                id="q"
+                type="text"
+                placeholder="질문이나 아이디어를 입력하세요…"
+                autocomplete="off"
+              />
+              <button id="btn" type="submit">
+                <span>ASK GROQ</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m4 4 17 8-17 8 3-8-3-8Zm3.6 7h7.2L6.9 7.3 7.6 11Zm-.7 5.7 7.9-3.7H7.6l-.7 3.7Z" />
+                </svg>
+              </button>
+            </div>
+            <p>AI는 실수할 수 있습니다. 중요한 정보는 한 번 더 확인하세요.</p>
+          </form>
+        </section>
+      </section>
+
+      <footer class="newspaper-footer">
+        <span>GROQ ASSISTANT</span>
+        <span>INTELLIGENCE · CONVERSATION · EVERY DAY</span>
+        <span>PAGE 01</span>
+      </footer>
+    </main>
+
+    <script src="/client/app.js"></script>
+  </body>
+</html>
