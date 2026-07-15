@@ -103,6 +103,12 @@ button {
   height: 6px;
   border-radius: 50%;
   background: var(--accent);
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.7); }
 }
 
 .masthead__title-row {
@@ -231,10 +237,10 @@ button {
   flex-direction: column;
   gap: 24px;
   min-height: 330px;
-  max-height: 48vh;
+  max-height: 60vh;
   overflow-y: auto;
   padding: clamp(24px, 4vw, 38px) 4px;
-  scrollbar-color: var(--ink-soft) transparent;
+  scrollbar-color: var(--rule-light) transparent;
   scrollbar-width: thin;
 }
 
@@ -359,6 +365,8 @@ button {
 .chat-composer__row:focus-within {
   outline: 2px solid var(--ink);
   outline-offset: 3px;
+  background: #fff;
+  border-color: var(--ink);
 }
 
 .chat-composer button {
@@ -437,7 +445,6 @@ button {
     font-size: 0.54rem;
   }
 
-  .masthead__utility span:nth-child(2),
   .masthead__folio strong,
   .newspaper-footer span:nth-child(2) {
     display: none;
